@@ -1,6 +1,6 @@
 $('button').click(function(e) {
 	$('.contenido').empty();
-	for(var i=0;i<100;i++){
+	for(var i=0;i<50;i++){
 		llamada();
 	}
 });

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PruebaVUE</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.js"
+  	integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  	crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div class="grid">
+		<div id="app">
+			<h1 v-bind:class="cambios"> {{ titulo }} </h1>
+			<span v-bind:title="message">
+				Hola a todos, feliz hanuka.
+			</span>
+			<ul>
+				<li v-for="item in lista">
+					{{item.texto}}
+					{{item.pene}}
+				</li>
+				<button v-on:click="reversa">Waddup fam</button>
+				<button v-on:click="jugada">La magia</button>
+				<input v-model="footer">
+			</ul>
+			<h3 v-if="bizivle"> {{ footer }} </h3>
+		</div>
+	</div>
+	<script src="hacks.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
